@@ -49,15 +49,15 @@
       <!-- HERO -->
       <section class="hero">
         <div class="container">
-          <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <h1 class="hero__header">EFEKTYWNE ROZWIĄZANIA <br>DLA WASZEGO BIZNESU</h1>
           <button class="btn hero__btn" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
       </section>
-      <section class="strengths section">
+      <section class="advantages section">
         <div class="container">
-          <ul class="advantages list">
+          <ul class="advantages__list list">
             <li class="advantages__item">
               <a class="advantages__link" href="#">
                 <svg class="advantages__icon">
@@ -113,35 +113,33 @@
       <section class="about-us">
         <div class="container">
           <h2 class="secondary-header">Czym się zajmujemy</h2>
-          <ul class="about list">
-            <li class="about__item">
+          <ul class="about-us__list">
+            <li class="about-us__item">
               <img
-                class="about__photo"
+                class="about-us__photo"
                 src="./images/about-us/1.jpg"
                 alt="Jednoczesne wyswietlanie na tablecie i monitorze kodu pisanego na klawiaturze"
                 width="370"
                 height="294"/>
-              <div class="about__header-wrapper">
-                <p class="about__label">Aplikacje komputerowe</p>
-              </div>
+                <p class="about-us__label">Aplikacje komputerowe</p>
             </li>
-            <li class="about__item">
+            <li class="about-us__item">
               <img
-                class="about__photo"
+                class="about-us__photo"
                 src="./images/about-us/2.jpg"
                 alt="Szablony stron na smartfony"
                 width="370"
                 height="294"/>
-              <p class="about__label">Aplikacje mobilne</p>
+              <p class="about-us__label">Aplikacje mobilne</p>
             </li>
-            <li class="about__item">
+            <li class="about-us__item">
               <img
-                class="about__photo"
+                class="about-us__photo"
                 src="./images/about-us/3.jpg"
                 alt="Paleta kolorów"
                 width="370"
                 height="294"/>
-              <p class="about__label">Rozwiązania graficzne</p>
+              <p class="about-us__label">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
@@ -158,6 +156,7 @@
                 alt="Na zdjeciu John Doe Product Designer"
                 width="270"
                 height="260"/>
+              <div class="team__container">
               <h3 class="team__name">John Doe</h3>
               <p class="team__job">Product Designer</p>
               <ul class="social list">
@@ -197,8 +196,7 @@
                 src="./images/team/2.jpg"
                 alt="Na zdjeciu John Doe Frontend Developer"
                 width="270"
-                height="260"
-              />
+                height="260"/>
               <h3 class="team__name">John Doe</h3>
               <p class="team__job">Frontend Developer</p>
               <ul class="social list">
@@ -238,8 +236,7 @@
                 src="./images/team/3.jpg"
                 alt="Na zdjeciu John Doe Marketing"
                 width="270"
-                height="260"
-              />
+                height="260"/>
               <h3 class="team__name">John Doe</h3>
               <p class="team__job">Marketing</p>
               <ul class="social list">
@@ -279,8 +276,7 @@
                 src="./images/team/4.jpg"
                 alt="Na zdjeciu John Doe UI Designer"
                 width="270"
-                height="260"
-              />
+                height="260"/>
               <h3 class="team__name">John Doe</h3>
               <p class="team__job">UI Designer</p>
               <ul class="social list">
@@ -315,6 +311,7 @@
               </ul>
             </li>
           </ul>
+        </div>
         </div>
       </section>
       <!-- CLIENTS -->
@@ -373,28 +370,28 @@
         <div class="footer-information">
           <a class="logo logo--dark-theme" href="#"
             ><span class="logo__accent-text">Web</span>Studio</a>
-          <address class="address-information">
-            <ul class="address list">
-              <li class="address__item">
+          <address class="footer-address">
+            <ul class="footer-address-list list">
+              <li class="footer-address-list__item">
                 <a
-                  class="address__link address__link--theme"
+                  class="footer-address-list__link footer-address-list__link--theme"
                   href="https://goo.gl/maps/yhdsXDUsX37qRGJ78"
                   target="_blank"
                   >m. Warszawa, Aleje Jerozolimskie 21</a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="mailto:info@example.com"
+              <li class="footer-address-list__item">
+                <a class="footer-address-list__link" href="mailto:info@example.com"
                   >info@example.com</a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="tel:+48111111111"
+              <li class="footer-address-list__item">
+                <a class="footer-address-list__link" href="tel:+48111111111"
                   >+48 111 111 111</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="social-links">
-          <h3 class="social__header">Dołącz do nas</h3>
+        <div class="footer-social-links">
+          <h3 class="footer-social-links__header">Dołącz do nas</h3>
           <ul class="social list">
             <li class="social__item">
               <a class="social__link social__link--dark-theme" href="#">
@@ -426,17 +423,17 @@
             </li>
           </ul>
         </div>
-        <div class="newsletter">
-          <form method="POST" class="newsletter__form">
-            <h3 class="newsletter__header">Zapisz się do newslettera</h3>
-            <div class="newsletter__input">
+        <div class="footer-newsletter">
+          <form method="POST" class="footer-newsletter__form">
+            <h3 class="footer-newsletter__header">Zapisz się do newslettera</h3>
+            <div class="footer-newsletter__input">
               <input
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                class="newsletter__email"/>
-              <button class="btn newsletter__btn" type="submit">
-                Zapisz się<svg class="newsletter__icon">
+                class="footer-newsletter__email"/>
+              <button class="btn footer-newsletter__btn" type="submit">
+                Zapisz się<svg class="footer-newsletter__icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
@@ -447,7 +444,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>x</button>
+        <button type="button" class="close-btn" data-modal-close>X</button>
         <form method="POST" class="form">
           <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
           <label for="name" class="form__label">Imię</label>
