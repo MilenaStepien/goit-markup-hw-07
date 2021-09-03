@@ -1,4 +1,4 @@
-.buttons {
+.portfolio-filters__list {
   display: flex;
   justify-content: center;
   padding-left: 510px;
@@ -7,7 +7,7 @@
   margin-bottom: 50px;
 }
 
-.buttons__name {
+.portfolio-filters__button {
   padding: 6px 22px;
   color: transparent;
   border: none;
@@ -29,7 +29,7 @@
   }
 }
 
-.buttons__item {
+.portfolio-filters__item {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:not(:last-child) {

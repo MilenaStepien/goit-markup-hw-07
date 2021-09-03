@@ -371,26 +371,26 @@
           <a class="logo logo--dark-theme" href="#"
             ><span class="logo__accent-text">Web</span>Studio</a>
           <address class="footer-address">
-            <ul class="footer-address-list list">
-              <li class="footer-address-list__item">
+            <ul class="footer-address__list list">
+              <li class="footer-address__item">
                 <a
-                  class="footer-address-list__link footer-address-list__link--theme"
+                  class="footer-address__link footer-address__link--theme"
                   href="https://goo.gl/maps/yhdsXDUsX37qRGJ78"
                   target="_blank"
                   >m. Warszawa, Aleje Jerozolimskie 21</a>
               </li>
-              <li class="footer-address-list__item">
-                <a class="footer-address-list__link" href="mailto:info@example.com"
+              <li class="footer-address__item">
+                <a class="footer-address__link" href="mailto:info@example.com"
                   >info@example.com</a>
               </li>
-              <li class="footer-address-list__item">
-                <a class="footer-address-list__link" href="tel:+48111111111"
+              <li class="footer-address__item">
+                <a class="footer-address__link" href="tel:+48111111111"
                   >+48 111 111 111</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social-links">
+        <div class="footer-social-links__list">
           <h3 class="footer-social-links__header">Dołącz do nas</h3>
           <ul class="social list">
             <li class="social__item">
@@ -426,12 +426,12 @@
         <div class="footer-newsletter">
           <form method="POST" class="footer-newsletter__form">
             <h3 class="footer-newsletter__header">Zapisz się do newslettera</h3>
-            <div class="footer-newsletter__input">
+            <div class="footer-newsletter__input-wrapper">
               <input
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                class="footer-newsletter__email"/>
+                class="footer-newsletter__input"/>
               <button class="btn footer-newsletter__btn" type="submit">
                 Zapisz się<svg class="footer-newsletter__icon">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -444,7 +444,15 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="close-btn__icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="15" fill="white" />
+          <circle cx="15" cy="15" r="14.5" stroke="black" stroke-opacity="0.1" />
+          <path
+            d="M21 10.1079L19.8921 9L15.5 13.3921L11.1079 9L10 10.1079L14.3921 14.5L10 18.8921L11.1079 20L15.5 15.6079L19.8921 20L21 18.8921L16.6079 14.5L21 10.1079Z"
+            fill="black" />
+          </svg>
+        </button>
         <form method="POST" class="form">
           <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
           <label for="name" class="form__label">Imię</label>
@@ -500,7 +508,7 @@
               <a href="#" class="form__link"> Politykę Prywatności</a>
           </label>
           </div>
-          <button class="btn form__btn" type="submit">Wyślij</button>
+          <button class="form__btn" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
